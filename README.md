@@ -25,7 +25,7 @@ Ken Ovienadu (kenovienadu@gmail.com)
     ```
 2. Navigate to the project directory:
     ```sh
-    cd mongoose-checkpoint
+    cd rest-api-checkpoint
     ```
 3. Install the dependencies:
     ```sh
