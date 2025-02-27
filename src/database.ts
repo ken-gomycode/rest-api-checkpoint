@@ -8,10 +8,11 @@ class Database {
         throw new Error("MONGODB_URL is not set in the environment variables");
       }
 
+      console.log("==== Connecting to Database ====");
       await mongoose.connect(config.MONGODB_URL, {
         dbName: 'rest-checkpoint'
       });
-      console.log("Connected to MongoDB");
+      console.log("==== Connected to MongoDB ====");
       return true;
     } catch (error: any) {
       console.error("Error connecting to MongoDB", error?.message || error);

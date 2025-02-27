@@ -14,6 +14,7 @@ const initialize = async (): Promise<void> => {
   const connected = await Database.connect();
   if (!connected) {
     console.error("Failed to connect to database");
+    process.exit(0);
   }
 
   // Start the server and listen on the configured port
